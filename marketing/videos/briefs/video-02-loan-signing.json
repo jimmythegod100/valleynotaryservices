@@ -1,0 +1,55 @@
+{
+  "id": "video-02",
+  "title": "Loan Signing & Real Estate Closings | Valley Notary Services",
+  "brand": "Valley Notary Services",
+  "tagline": "Loan Signing Specialist · Stanislaus County",
+  "accent": "#d97706",
+  "dark": "#0f172a",
+  "voice": "en-US-AndrewNeural",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "Loan Signing Specialist",
+      "subtitle": "Valley Notary Services",
+      "narration": "One missed signature can delay your closing. If you're an escrow officer, loan officer, or homebuyer in Stanislaus County, you need a mobile notary who understands loan packages and lender timelines. Valley Notary Services specializes in loan signing and real estate closings across Modesto and the Central Valley.",
+      "caption": "Loan-ready mobile notary · Stanislaus County",
+      "kenBurns": "zoom-in"
+    },
+    {
+      "type": "chapter",
+      "title": "The Problem",
+      "subtitle": "Packages, timelines, signer anxiety",
+      "narration": "Loan packages are large. Deadlines are tight. Signers are nervous. A notary who rushes, misses an initial, or mishandles the return package can push your closing back days. Escrow and title companies need someone dependable — on time, detail-oriented, and easy to reach.",
+      "caption": "Details matter on closing day",
+      "kenBurns": "pan-right"
+    },
+    {
+      "type": "broll",
+      "title": "What We Handle",
+      "subtitle": "Purchase · Refinance · HELOC",
+      "narration": "We notarize purchase loans, refinances, HELOC signings, and escrow packages. We follow lender instructions, guide signers through each document, and ensure initials and signatures are complete before the package goes back. We don't give legal advice — we perform notarial acts in accordance with California law.",
+      "caption": "Purchase · Refinance · HELOC · Escrow",
+      "kenBurns": "zoom-in"
+    },
+    {
+      "type": "chapter",
+      "title": "Mobile Across the County",
+      "subtitle": "Evening appointments available",
+      "narration": "We're mobile across Modesto, Ceres, Turlock, Salida, Riverbank, Oakdale, and Stanislaus County. We meet signers at home, office, or a convenient location. Monday through Friday, 8 AM to 7 PM, with Saturday by appointment — because closings don't always happen during business hours.",
+      "caption": "We come to your signer",
+      "kenBurns": "pan-left"
+    },
+    {
+      "type": "outro",
+      "title": "Escrow Officers: Save This Contact",
+      "subtitle": "info@valleynotaryservices.com",
+      "narration": "Escrow officers and loan officers — save Valley Notary Services for your next signing. Email info at valleynotaryservices.com with subject line Notary Appointment Request. Include the borrower name, document type, preferred time, and location. We'll confirm promptly. Valley Notary Services — mobile loan signing in Modesto and the Central Valley.",
+      "caption": "valleynotaryservices.com",
+      "kenBurns": "zoom-out",
+      "holdSeconds": 8
+    }
+  ]
+}

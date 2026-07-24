@@ -1,0 +1,87 @@
+{
+  "id": "video-01",
+  "title": "Mobile Notary in Modesto, CA | Valley Notary Services",
+  "brand": "Valley Notary Services",
+  "tagline": "Mobile Notary Public · Modesto & Central Valley",
+  "accent": "#d97706",
+  "dark": "#0f172a",
+  "voice": "en-US-AndrewNeural",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "Mobile Notary in Modesto",
+      "subtitle": "Valley Notary Services",
+      "narration": "If you're in Modesto or anywhere in Stanislaus County and you need documents notarized — maybe you're closing on a home, signing estate papers, or handling a power of attorney — you probably don't want to waste an afternoon driving to a storefront or waiting in line. Valley Notary Services is your local California notary public. We are a mobile notary. That means we come to you.",
+      "caption": "We come to you — mobile notary in Modesto",
+      "kenBurns": "zoom-in"
+    },
+    {
+      "type": "chapter",
+      "title": "When You Need Us",
+      "subtitle": "Deadlines don't wait",
+      "narration": "Most people call us when they're already on a timeline. A closing date from escrow. A refinance that has to fund. A family member in the hospital who needs documents signed today. Or an attorney who sent over a trust packet and said, get this notarized this week. You need someone who shows up on time, handles the documents carefully, and communicates clearly from the first email to the last signature. That's the standard we work to every day.",
+      "caption": "On time. Careful. Clear communication.",
+      "kenBurns": "pan-right"
+    },
+    {
+      "type": "chapter",
+      "title": "Our Services",
+      "subtitle": "Loan · Estate · General",
+      "narration": "Here's what we do. Loan signing and real estate closings — escrow packages, purchase loans, refinances, and HELOC signings. We understand that lender timelines matter. Missing a signature or initial can delay your closing, so we pay attention to the details in the package.",
+      "caption": "Loan signings & real estate closings",
+      "kenBurns": "zoom-in"
+    },
+    {
+      "type": "broll",
+      "title": "Estate & Family Documents",
+      "subtitle": "At your home or office",
+      "narration": "Estate planning documents — wills, trusts, healthcare directives, and related acknowledgments. Often that's at your kitchen table or your attorney's office, with family members who need a calm, professional presence. We perform notarial acts only. We don't give legal advice — we're not attorneys — but we make the signing process smooth and by the book. General notary work — affidavits, powers of attorney, bills of sale, deeds, and other everyday California notarial acts.",
+      "caption": "Estate planning · POA · Affidavits · Deeds",
+      "kenBurns": "pan-left"
+    },
+    {
+      "type": "broll",
+      "title": "We Come to You",
+      "subtitle": "Modesto · Ceres · Turlock · Central Valley",
+      "narration": "And because we're mobile, we meet you where it's convenient: your home, your office, a hospital, a coffee shop — anywhere across Modesto, Ceres, Turlock, Salida, Riverbank, Oakdale, and the broader Central Valley.",
+      "caption": "Home · Office · Hospital · Meeting spot",
+      "kenBurns": "zoom-out"
+    },
+    {
+      "type": "chapter",
+      "title": "Why Choose Us",
+      "subtitle": "California commissioned notary",
+      "narration": "A few things that matter when you're choosing a notary. I'm commissioned as a California notary public, authorized for mobile service across the state. For loan signings, we're familiar with the flow escrow and title companies expect — sign here, initial there, return the completed package on schedule. We treat your documents with care. That means valid ID for every signer, documents that are unsigned when we arrive unless your instructions say otherwise, and following any special instructions from your escrow officer or attorney. If something in the package looks wrong, we'll pause and tell you to contact the company that sent it. We'd rather slow down for five minutes than create a problem on closing day.",
+      "caption": "Loan-ready · Careful handling · CA law",
+      "kenBurns": "zoom-in"
+    },
+    {
+      "type": "chapter",
+      "title": "What to Bring",
+      "subtitle": "Simple checklist",
+      "narration": "What to have ready before we arrive. One: valid, government-issued photo ID for every person who will sign. Two: the documents — typically unsigned unless directed otherwise. Three: any notes from escrow, your lender, or your attorney about how the signing should be handled. That's it. We'll bring the notarial supplies.",
+      "caption": "ID · Unsigned docs · Escrow instructions",
+      "kenBurns": "pan-right"
+    },
+    {
+      "type": "broll",
+      "title": "Flexible Hours",
+      "subtitle": "Built for busy schedules",
+      "narration": "Appointment hours: Monday through Friday, 8 AM to 7 PM. Saturday by appointment. Sunday for limited or urgent requests when we can accommodate. We built Valley Notary Services for busy Central Valley schedules — people who work during the day but still need a notary at 6 PM at their dining room table.",
+      "caption": "Mon–Fri 8 AM–7 PM · Sat by appointment",
+      "kenBurns": "zoom-in"
+    },
+    {
+      "type": "outro",
+      "title": "Book Your Appointment",
+      "subtitle": "info@valleynotaryservices.com",
+      "narration": "If you need a mobile notary in Modesto or nearby, here's the fastest way to reach us. Visit valleynotaryservices.com, or email info at valleynotaryservices.com. Use the subject line Notary Appointment Request — that helps us prioritize your message. In your email, include your name, phone number, the document type, your preferred date and time, and the location. We'll confirm availability as promptly as we can. Valley Notary Services — mobile notary public for Modesto and the Central Valley.",
+      "caption": "valleynotaryservices.com",
+      "kenBurns": "zoom-out",
+      "holdSeconds": 8
+    }
+  ]
+}

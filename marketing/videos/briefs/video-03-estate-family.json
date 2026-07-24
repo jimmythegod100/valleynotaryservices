@@ -1,0 +1,55 @@
+{
+  "id": "video-03",
+  "title": "Estate & Family Documents at Home | Valley Notary Services",
+  "brand": "Valley Notary Services",
+  "tagline": "Private · Professional · At Home",
+  "accent": "#d97706",
+  "dark": "#0f172a",
+  "voice": "en-US-AndrewNeural",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "sections": [
+    {
+      "type": "intro",
+      "title": "Estate Documents at Home",
+      "subtitle": "Valley Notary Services",
+      "narration": "Sensitive documents deserve privacy — not a crowded UPS store. When your family needs wills, trusts, or healthcare directives notarized, Valley Notary Services comes to your home or your attorney's office in Modesto and Stanislaus County.",
+      "caption": "Private signing at home",
+      "kenBurns": "zoom-in"
+    },
+    {
+      "type": "chapter",
+      "title": "When Families Call",
+      "subtitle": "Hospitals · Evenings · Multiple signers",
+      "narration": "Families call us when an attorney sends estate planning documents, when a parent is in the hospital, or when multiple family members need to sign at the kitchen table after work. You need a calm, professional notary who respects the moment — not a rushed storefront line.",
+      "caption": "Calm, professional presence",
+      "kenBurns": "pan-right"
+    },
+    {
+      "type": "broll",
+      "title": "What We Notarize",
+      "subtitle": "Not legal advice — notarial acts only",
+      "narration": "We notarize wills, trusts, healthcare directives, powers of attorney, and related acknowledgments. We are not attorneys and cannot give legal advice. We perform notarial acts only — making the signing process smooth, clear, and compliant with California law.",
+      "caption": "Wills · Trusts · Healthcare directives · POA",
+      "kenBurns": "zoom-in"
+    },
+    {
+      "type": "chapter",
+      "title": "Before We Arrive",
+      "subtitle": "Simple preparation",
+      "narration": "Have valid photo ID for every signer. Bring unsigned documents unless your attorney directed otherwise. Confirm who must be present — we'll follow any special instructions from your attorney. We'll bring the notarial supplies.",
+      "caption": "ID · Unsigned docs · All signers present",
+      "kenBurns": "pan-left"
+    },
+    {
+      "type": "outro",
+      "title": "Book a Family Appointment",
+      "subtitle": "info@valleynotaryservices.com",
+      "narration": "Email info at valleynotaryservices.com with subject line Notary Appointment Request. Tell us the document type, preferred date and time, and location in Modesto or nearby. Valley Notary Services — mobile notary for estate and family documents in the Central Valley.",
+      "caption": "valleynotaryservices.com",
+      "kenBurns": "zoom-out",
+      "holdSeconds": 8
+    }
+  ]
+}
