@@ -1,6 +1,6 @@
 # Valley Notary Services
 
-Professional mobile notary public site for Modesto, CA and the Central Valley.
+Professional mobile notary public site for Modesto, CA and the Central Valley. A service of Martinez Enterprises.
 
 **Live site:** [https://valleynotaryservices.com](https://valleynotaryservices.com)
 
@@ -26,4 +26,4 @@ python3 -m http.server 8080
 
 ## Deploy
 
-Push to `main`. GitHub Pages publishes from the repository root.
+Push to `main`. GitHub Pages publishes from the repository root. Do not change `CNAME` or email-related DNS records when editing site files.

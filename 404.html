@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page not found | Valley Notary Services</title>
+  <meta name="description" content="That page was not found. Return to Valley Notary Services to request a mobile notary appointment in Modesto, CA." />
   <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0f172a" />
   <link rel="canonical" href="https://valleynotaryservices.com/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32" />
@@ -18,7 +20,6 @@
       --gold: #d97706;
       --gold-soft: #fbbf24;
       --slate: #f8fafc;
-      --muted: #475569;
       --font-display: "Fraunces", Georgia, serif;
       --font-body: "Manrope", "Segoe UI", sans-serif;
     }
@@ -33,8 +34,14 @@
       font-family: var(--font-body);
       color: var(--slate);
       background:
+        radial-gradient(ellipse at 20% 10%, rgba(61, 109, 148, 0.35), transparent 45%),
+        radial-gradient(ellipse at 90% 80%, rgba(217, 119, 6, 0.18), transparent 40%),
         linear-gradient(160deg, #0f172a 0%, #1e293b 55%, #0f172a 100%);
       padding: 2rem 2rem 5.5rem;
+    }
+    :focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
     }
     .panel {
       width: min(100%, 36rem);
@@ -63,6 +70,12 @@
       color: rgba(248, 250, 252, 0.82);
       line-height: 1.6;
     }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
     a.btn {
       display: inline-flex;
       align-items: center;
@@ -73,23 +86,39 @@
       font-weight: 700;
       text-decoration: none;
       border-radius: 4px;
+      border: 2px solid transparent;
+      transition: background 160ms ease;
     }
     a.btn:hover { background: #b45309; }
+    a.btn-ghost {
+      background: transparent;
+      border-color: rgba(248, 250, 252, 0.4);
+      color: var(--slate);
+    }
+    a.btn-ghost:hover {
+      background: rgba(248, 250, 252, 0.08);
+      border-color: var(--slate);
+    }
     .site-footer {
       position: fixed;
       left: 0;
       right: 0;
       bottom: 0;
-      background: var(--navy);
+      background: rgba(15, 23, 42, 0.92);
       color: rgba(248, 250, 252, 0.62);
       padding: 1rem 1.25rem;
       font-size: 0.85rem;
       line-height: 1.5;
       text-align: center;
+      border-top: 1px solid rgba(248, 250, 252, 0.1);
     }
     .site-footer p {
       margin: 0;
       color: rgba(248, 250, 252, 0.62);
+    }
+    .site-footer a {
+      color: var(--gold-soft);
+      text-decoration: none;
     }
   </style>
 </head>
@@ -100,10 +129,13 @@
     </a>
     <h1>Page not found</h1>
     <p>That link doesn’t exist. Head back to the homepage to request a mobile notary appointment in Modesto and the Central Valley.</p>
-    <a class="btn" href="/">Back to homepage</a>
+    <div class="actions">
+      <a class="btn" href="/">Back to homepage</a>
+      <a class="btn btn-ghost" href="mailto:info@valleynotaryservices.com?subject=Notary%20Appointment%20Request">Email us</a>
+    </div>
   </div>
   <footer class="site-footer">
-    <p>&copy; <span id="year">2026</span> Martinez Enterprises. All rights reserved. Valley Notary Services is a service of Martinez Enterprises.</p>
+    <p>&copy; <span id="year">2026</span> Martinez Enterprises. All rights reserved. Valley Notary Services is a service of Martinez Enterprises. · <a href="mailto:info@valleynotaryservices.com">info@valleynotaryservices.com</a></p>
   </footer>
   <script>
     document.getElementById("year").textContent = String(new Date().getFullYear());

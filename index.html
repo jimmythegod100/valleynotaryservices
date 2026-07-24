@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valley Notary Services | Professional Mobile Notary in Modesto, CA</title>
-  <meta name="description" content="Fast, reliable, and professional mobile notary public services in Modesto, CA. Serving loan signings, real estate documents, affidavits, and power of attorney." />
+  <title>Valley Notary Services | Mobile Notary in Modesto, CA</title>
+  <meta name="description" content="California mobile notary public in Modesto and Stanislaus County. Loan signings, real estate closings, estate documents, affidavits, and power of attorney—on-site." />
   <meta name="robots" content="index, follow" />
+  <meta name="author" content="Valley Notary Services" />
+  <meta name="geo.region" content="US-CA" />
+  <meta name="geo.placename" content="Modesto" />
+  <meta name="theme-color" content="#0f172a" />
   <link rel="canonical" href="https://valleynotaryservices.com/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32" />
@@ -13,27 +17,58 @@
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://valleynotaryservices.com/" />
-  <meta property="og:title" content="Valley Notary Services | Professional Mobile Notary in Modesto, CA" />
-  <meta property="og:description" content="Fast, reliable, and professional mobile notary public services in Modesto, CA. Serving loan signings, real estate documents, affidavits, and power of attorney." />
+  <meta property="og:title" content="Valley Notary Services | Mobile Notary in Modesto, CA" />
+  <meta property="og:description" content="California mobile notary public in Modesto and Stanislaus County. Loan signings, real estate closings, estate documents, and everyday notarizations—on-site." />
   <meta property="og:image" content="https://valleynotaryservices.com/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Valley Notary Services — professional mobile notary in Modesto, CA" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Valley Notary Services" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Valley Notary Services | Professional Mobile Notary in Modesto, CA" />
-  <meta name="twitter:description" content="Fast, reliable, and professional mobile notary public services in Modesto, CA. Serving loan signings, real estate documents, affidavits, and power of attorney." />
+  <meta name="twitter:title" content="Valley Notary Services | Mobile Notary in Modesto, CA" />
+  <meta name="twitter:description" content="California mobile notary public in Modesto and Stanislaus County. On-site loan signings, real estate, and everyday documents." />
   <meta name="twitter:image" content="https://valleynotaryservices.com/og-image.png" />
+  <meta name="twitter:image:alt" content="Valley Notary Services — professional mobile notary in Modesto, CA" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Notary",
+    "name": "Valley Notary Services",
+    "description": "California mobile notary public serving Modesto, Stanislaus County, and the Central Valley.",
+    "url": "https://valleynotaryservices.com/",
+    "email": "info@valleynotaryservices.com",
+    "image": "https://valleynotaryservices.com/og-image.png",
+    "logo": "https://valleynotaryservices.com/images/logo.png",
+    "areaServed": [
+      { "@type": "City", "name": "Modesto" },
+      { "@type": "AdministrativeArea", "name": "Stanislaus County" },
+      { "@type": "AdministrativeArea", "name": "Central Valley, California" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Modesto",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Martinez Enterprises"
+    }
+  }
+  </script>
+
   <style>
     :root {
       --navy: #0f172a;
       --navy-soft: #1e293b;
+      --valley-blue: #3d6d94;
       --gold: #d97706;
       --gold-deep: #b45309;
       --gold-soft: #fbbf24;
@@ -44,7 +79,6 @@
       --white: #ffffff;
       --max: 1120px;
       --radius: 4px;
-      --shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
       --font-display: "Fraunces", Georgia, serif;
       --font-body: "Manrope", "Segoe UI", sans-serif;
     }
@@ -63,7 +97,10 @@
       margin: 0;
       font-family: var(--font-body);
       color: var(--ink);
-      background: var(--slate);
+      background:
+        radial-gradient(ellipse 80% 50% at 100% -10%, rgba(61, 109, 148, 0.09), transparent 50%),
+        radial-gradient(ellipse 60% 40% at -10% 30%, rgba(217, 119, 6, 0.06), transparent 45%),
+        var(--slate);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
@@ -78,6 +115,28 @@
       text-decoration: none;
     }
 
+    :focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -3.5rem;
+      z-index: 100;
+      background: var(--gold);
+      color: var(--white);
+      padding: 0.65rem 1rem;
+      font-weight: 700;
+      border-radius: var(--radius);
+      transition: top 160ms ease;
+    }
+
+    .skip-link:focus {
+      top: 1rem;
+    }
+
     .wrap {
       width: min(100% - 2rem, var(--max));
       margin-inline: auto;
@@ -88,7 +147,7 @@
       top: 0;
       z-index: 40;
       backdrop-filter: blur(12px);
-      background: rgba(248, 250, 252, 0.86);
+      background: rgba(248, 250, 252, 0.9);
       border-bottom: 1px solid var(--line);
     }
 
@@ -171,40 +230,16 @@
       background: var(--navy-soft);
     }
 
+    .nav-cta-short { display: none; }
+
     .hero {
       position: relative;
-      min-height: min(92vh, 820px);
+      min-height: min(92vh, 860px);
       display: grid;
-      grid-template-rows: auto 1fr;
+      align-items: end;
       color: var(--white);
       overflow: hidden;
       isolation: isolate;
-    }
-
-    .hero-masthead {
-      position: relative;
-      z-index: 1;
-      background: #ececec;
-      border-bottom: 1px solid rgba(15, 23, 42, 0.1);
-      padding: 0.85rem 0;
-    }
-
-    .hero-masthead .wrap {
-      display: flex;
-      align-items: center;
-    }
-
-    .hero-masthead img {
-      height: clamp(3.75rem, 11vw, 5.75rem);
-      width: auto;
-      max-width: min(18rem, 72vw);
-    }
-
-    .hero-stage {
-      position: relative;
-      display: grid;
-      align-items: end;
-      min-height: min(78vh, 720px);
     }
 
     .hero-media {
@@ -212,9 +247,10 @@
       inset: 0;
       z-index: -2;
       background:
-        linear-gradient(180deg, rgba(15, 23, 42, 0.35) 0%, rgba(15, 23, 42, 0.78) 58%, rgba(15, 23, 42, 0.92) 100%),
-        linear-gradient(120deg, rgba(217, 119, 6, 0.22), transparent 45%),
-        url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2000&q=80") center / cover no-repeat;
+        linear-gradient(180deg, rgba(15, 23, 42, 0.42) 0%, rgba(15, 23, 42, 0.72) 48%, rgba(15, 23, 42, 0.94) 100%),
+        linear-gradient(115deg, rgba(61, 109, 148, 0.28), transparent 42%),
+        linear-gradient(120deg, rgba(217, 119, 6, 0.18), transparent 50%),
+        url("/images/hero.jpg") center / cover no-repeat;
       transform: scale(1.04);
       animation: heroDrift 18s ease-in-out infinite alternate;
     }
@@ -224,30 +260,46 @@
       position: absolute;
       inset: 0;
       background-image:
-        radial-gradient(circle at 20% 20%, rgba(251, 191, 36, 0.12), transparent 28%),
-        radial-gradient(circle at 80% 70%, rgba(15, 23, 42, 0.2), transparent 35%);
+        radial-gradient(circle at 18% 22%, rgba(251, 191, 36, 0.14), transparent 30%),
+        radial-gradient(circle at 82% 68%, rgba(61, 109, 148, 0.22), transparent 36%);
       pointer-events: none;
     }
 
     .hero-content {
-      padding: clamp(4rem, 10vw, 7rem) 0 clamp(3rem, 8vw, 5rem);
-      max-width: 42rem;
+      padding: clamp(5.5rem, 14vw, 8.5rem) 0 clamp(3rem, 8vw, 5rem);
+      max-width: 40rem;
       animation: riseIn 700ms ease both;
     }
 
+    .hero-brand {
+      display: block;
+      width: min(17.5rem, 78vw);
+      margin: 0 0 1.5rem;
+      padding: 0.85rem 1rem;
+      background: #ececec;
+      line-height: 0;
+      animation: riseIn 650ms ease both;
+    }
+
+    .hero-brand img {
+      width: 100%;
+      height: auto;
+    }
+
     .hero h1 {
-      margin: 0 0 0.85rem;
-      font-family: var(--font-body);
-      font-size: clamp(1.15rem, 2.6vw, 1.45rem);
-      font-weight: 600;
-      line-height: 1.35;
-      max-width: 28ch;
+      margin: 0 0 0.9rem;
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 4.5vw, 2.85rem);
+      font-weight: 700;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      max-width: 16ch;
     }
 
     .hero-lead {
       margin: 0 0 1.75rem;
-      color: rgba(248, 250, 252, 0.88);
-      font-size: 1.05rem;
+      color: rgba(248, 250, 252, 0.9);
+      font-size: 1.08rem;
       max-width: 38ch;
     }
 
@@ -297,6 +349,10 @@
       color: var(--navy);
     }
 
+    .section-title-sm {
+      font-size: clamp(1.35rem, 2.5vw, 1.55rem);
+    }
+
     .section-lead {
       margin: 0;
       color: var(--muted);
@@ -306,14 +362,14 @@
 
     .trust {
       background:
-        linear-gradient(180deg, #eef2f7 0%, var(--slate) 100%);
+        linear-gradient(180deg, #e8eef5 0%, var(--slate) 100%);
       border-block: 1px solid var(--line);
-      padding: 1.5rem 0;
+      padding: 1.65rem 0;
     }
 
     .trust-row {
       display: grid;
-      gap: 1rem;
+      gap: 1.15rem;
       grid-template-columns: 1fr;
     }
 
@@ -321,6 +377,8 @@
       font-weight: 600;
       color: var(--navy-soft);
       font-size: 0.98rem;
+      padding-left: 0.85rem;
+      border-left: 2px solid var(--valley-blue);
     }
 
     .trust-item span {
@@ -334,6 +392,7 @@
     .services {
       background:
         radial-gradient(circle at top left, rgba(217, 119, 6, 0.08), transparent 40%),
+        radial-gradient(circle at bottom right, rgba(61, 109, 148, 0.07), transparent 42%),
         var(--slate);
     }
 
@@ -361,7 +420,7 @@
     .service h3 {
       margin: 0 0 0.55rem;
       font-family: var(--font-display);
-      font-size: 1.45rem;
+      font-size: 1.4rem;
       color: var(--navy);
       letter-spacing: -0.02em;
     }
@@ -372,24 +431,15 @@
     }
 
     .area {
-      background: var(--navy);
+      background:
+        radial-gradient(ellipse at 90% 120%, rgba(217, 119, 6, 0.22), transparent 45%),
+        linear-gradient(160deg, var(--navy) 0%, #152238 55%, var(--navy-soft) 100%);
       color: var(--white);
       position: relative;
       overflow: hidden;
     }
 
-    .area::before {
-      content: "";
-      position: absolute;
-      inset: auto -10% -40% auto;
-      width: 420px;
-      height: 420px;
-      background: radial-gradient(circle, rgba(217, 119, 6, 0.28), transparent 68%);
-      pointer-events: none;
-    }
-
-    .area .section-title,
-    .area .section-kicker {
+    .area .section-title {
       color: var(--white);
     }
 
@@ -408,20 +458,20 @@
     }
 
     .city-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.65rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.55rem 1.25rem;
       padding: 0;
       margin: 0;
       list-style: none;
     }
 
     .city-list li {
-      padding: 0.45rem 0.8rem;
-      border: 1px solid rgba(248, 250, 252, 0.22);
       color: rgba(248, 250, 252, 0.92);
-      font-size: 0.92rem;
+      font-size: 0.98rem;
       font-weight: 500;
+      padding: 0.2rem 0 0.2rem 0.75rem;
+      border-left: 2px solid rgba(61, 109, 148, 0.85);
     }
 
     .hours {
@@ -454,12 +504,12 @@
 
     .contact {
       background:
-        linear-gradient(160deg, #fff7ed 0%, var(--slate) 45%, #eef2ff 100%);
+        linear-gradient(160deg, #fff7ed 0%, var(--slate) 42%, #eef3f8 100%);
     }
 
     .contact-panel {
       display: grid;
-      gap: 2rem;
+      gap: 2.25rem;
       align-items: start;
     }
 
@@ -479,6 +529,11 @@
       margin-top: 1.25rem;
       color: var(--muted);
       font-size: 0.95rem;
+    }
+
+    .contact-aside {
+      padding-top: 0.25rem;
+      border-top: 2px solid var(--navy);
     }
 
     .site-footer {
@@ -507,18 +562,6 @@
       height: auto;
     }
 
-    .contact-logo {
-      display: block;
-      width: min(12rem, 55vw);
-      margin: 0 0 1.25rem;
-      line-height: 0;
-    }
-
-    .contact-logo img {
-      width: 100%;
-      height: auto;
-    }
-
     .footer-disclaimer {
       max-width: 70ch;
       line-height: 1.55;
@@ -543,6 +586,10 @@
       color: var(--gold-soft);
     }
 
+    .footer-meta a:hover {
+      color: var(--white);
+    }
+
     @keyframes heroDrift {
       from { transform: scale(1.02) translateY(0); }
       to { transform: scale(1.08) translateY(-1.5%); }
@@ -560,10 +607,17 @@
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
-      .hero-media,
+      .hero-media {
+        animation: none !important;
+        transform: none !important;
+      }
       .hero-content,
+      .hero-brand,
       .service {
         animation: none !important;
+      }
+      .btn:hover {
+        transform: none;
       }
     }
 
@@ -575,23 +629,29 @@
         font-size: 0.85rem;
         white-space: nowrap;
       }
+      .nav-cta-full { display: none; }
+      .nav-cta-short { display: inline; }
     }
 
     @media (min-width: 720px) {
       .nav-links { display: flex; }
-      .trust-row { grid-template-columns: repeat(3, 1fr); }
+      .trust-row { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
       .service-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem 2.5rem; }
       .area-grid { grid-template-columns: 1.2fr 1fr; align-items: start; }
-      .contact-panel { grid-template-columns: 1.2fr 0.8fr; }
+      .city-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .contact-panel { grid-template-columns: 1.25fr 0.75fr; gap: 3rem; }
       .footer-grid { grid-template-columns: 1.4fr 1fr; }
     }
 
     @media (min-width: 980px) {
       .service-grid { grid-template-columns: repeat(4, 1fr); }
+      .city-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="wrap nav">
       <a class="brand" href="#top">
@@ -602,35 +662,31 @@
         <a href="#area">Service Area</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn-primary" href="mailto:info@valleynotaryservices.com?subject=Notary%20Appointment%20Request">Request a Notary</a>
+      <a class="btn btn-primary" href="mailto:info@valleynotaryservices.com?subject=Notary%20Appointment%20Request"><span class="nav-cta-full">Request a Notary</span><span class="nav-cta-short">Request</span></a>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero" aria-label="Hero">
-      <div class="hero-masthead">
-        <div class="wrap">
+  <main id="main">
+    <section class="hero" id="top" aria-label="Introduction">
+      <div class="hero-media" role="img" aria-label="Professional documents prepared for notarization"></div>
+      <div class="wrap hero-content">
+        <div class="hero-brand">
           <img src="/images/logo-light.png" alt="Valley Notary Services" width="413" height="267" decoding="async" fetchpriority="high" />
         </div>
-      </div>
-      <div class="hero-stage">
-        <div class="hero-media" role="img" aria-label="Professional documents prepared for notarization"></div>
-        <div class="wrap hero-content">
-          <h1>Mobile notary public for Modesto and the Central Valley</h1>
-          <p class="hero-lead">Reliable on-site notarizations for loan signings, real estate, and everyday documents—when and where you need them.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:info@valleynotaryservices.com?subject=Notary%20Appointment%20Request">Request a Notary</a>
-            <a class="btn btn-secondary" href="#services">View Services</a>
-          </div>
-          <div class="hero-contact">
-            <a href="mailto:info@valleynotaryservices.com">info@valleynotaryservices.com</a>
-            <span>Stanislaus County · Mobile appointments</span>
-          </div>
+        <h1>Mobile notary for Modesto and the Central Valley</h1>
+        <p class="hero-lead">Reliable on-site notarizations for loan signings, real estate, and everyday documents—when and where you need them.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:info@valleynotaryservices.com?subject=Notary%20Appointment%20Request">Request a Notary</a>
+          <a class="btn btn-secondary" href="#services">View Services</a>
+        </div>
+        <div class="hero-contact">
+          <a href="mailto:info@valleynotaryservices.com">info@valleynotaryservices.com</a>
+          <span>Stanislaus County · Mobile appointments</span>
         </div>
       </div>
     </section>
 
-    <div class="trust">
+    <div class="trust" role="region" aria-label="Why clients choose us">
       <div class="wrap trust-row">
         <div class="trust-item">California Notary Public<span>Commissioned for statewide mobile service</span></div>
         <div class="trust-item">Loan &amp; Real Estate Ready<span>Escrow, refinance, mortgage, and HELOC signings</span></div>
@@ -638,12 +694,12 @@
       </div>
     </div>
 
-    <section class="services" id="services">
+    <section class="services" id="services" aria-labelledby="services-title">
       <div class="wrap">
         <div class="services-head">
           <p class="section-kicker">Core Services</p>
-          <h2 class="section-title">Notary support built for busy Central Valley schedules</h2>
-          <p class="section-lead">From complex closing packages to same-day affidavits, appointments are handled with clear communication and careful document handling.</p>
+          <h2 class="section-title" id="services-title">Notary support for busy Central Valley schedules</h2>
+          <p class="section-lead">From complex closing packages to same-day affidavits, appointments are handled with clear communication and careful document handling under California notary law.</p>
         </div>
         <div class="service-grid">
           <article class="service">
@@ -666,10 +722,10 @@
       </div>
     </section>
 
-    <section class="area" id="area">
+    <section class="area" id="area" aria-labelledby="area-title">
       <div class="wrap">
         <p class="section-kicker">Service Area &amp; Hours</p>
-        <h2 class="section-title">Serving Modesto and Stanislaus County</h2>
+        <h2 class="section-title" id="area-title">Serving Modesto and Stanislaus County</h2>
         <p class="section-lead">Mobile coverage across Modesto, Ceres, Turlock, Salida, and the broader Central Valley—with flexible appointment windows for weekday and evening needs.</p>
         <div class="area-grid">
           <div>
@@ -685,7 +741,7 @@
             </ul>
           </div>
           <div class="hours">
-            <h3 class="section-title" style="font-size:1.5rem;margin-bottom:0.25rem;">Appointment Hours</h3>
+            <h3 class="section-title section-title-sm">Appointment Hours</h3>
             <dl>
               <div>
                 <dt>Monday – Friday</dt>
@@ -709,14 +765,11 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="wrap contact-panel">
         <div class="contact-copy">
-          <div class="contact-logo">
-            <img src="/images/logo.png" alt="Valley Notary Services" width="413" height="267" loading="lazy" decoding="async" />
-          </div>
           <p class="section-kicker">Book an Appointment</p>
-          <h2 class="section-title">Request a mobile notary visit</h2>
+          <h2 class="section-title" id="contact-title">Request a mobile notary visit</h2>
           <p>Email the details of your signing—document type, preferred time, and location—and we’ll confirm availability promptly.</p>
           <div class="contact-actions">
             <a class="btn btn-primary" href="mailto:info@valleynotaryservices.com?subject=Notary%20Appointment%20Request&body=Name%3A%0APhone%3A%0APreferred%20date%20%2F%20time%3A%0ALocation%3A%0ADocument%20type%3A%0A">Email Appointment Request</a>
@@ -724,9 +777,9 @@
           </div>
           <p class="contact-note">Subject line prefills to <strong>Notary Appointment Request</strong> so your message is easy to prioritize.</p>
         </div>
-        <aside aria-label="What to include">
+        <aside class="contact-aside" aria-label="What to include">
           <p class="section-kicker">Helpful details</p>
-          <h3 class="section-title" style="font-size:1.55rem;">Have these ready</h3>
+          <h3 class="section-title section-title-sm">Have these ready</h3>
           <p class="section-lead">Valid photo ID for all signers, the unsigned documents, and any special instructions from escrow or your attorney.</p>
         </aside>
       </div>
