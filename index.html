@@ -8,7 +8,8 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://valleynotaryservices.com/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://valleynotaryservices.com/" />
@@ -100,11 +101,15 @@
     }
 
     .brand {
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
-      letter-spacing: -0.02em;
-      color: var(--navy);
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+      line-height: 0;
+    }
+
+    .brand img {
+      height: clamp(2.35rem, 5.5vw, 2.85rem);
+      width: auto;
     }
 
     .nav-links {
@@ -170,10 +175,36 @@
       position: relative;
       min-height: min(92vh, 820px);
       display: grid;
-      align-items: end;
+      grid-template-rows: auto 1fr;
       color: var(--white);
       overflow: hidden;
       isolation: isolate;
+    }
+
+    .hero-masthead {
+      position: relative;
+      z-index: 1;
+      background: #ececec;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+      padding: 0.85rem 0;
+    }
+
+    .hero-masthead .wrap {
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-masthead img {
+      height: clamp(3.75rem, 11vw, 5.75rem);
+      width: auto;
+      max-width: min(18rem, 72vw);
+    }
+
+    .hero-stage {
+      position: relative;
+      display: grid;
+      align-items: end;
+      min-height: min(78vh, 720px);
     }
 
     .hero-media {
@@ -199,23 +230,9 @@
     }
 
     .hero-content {
-      padding: clamp(5rem, 12vw, 8rem) 0 clamp(3rem, 8vw, 5rem);
+      padding: clamp(4rem, 10vw, 7rem) 0 clamp(3rem, 8vw, 5rem);
       max-width: 42rem;
       animation: riseIn 700ms ease both;
-    }
-
-    .hero-brand {
-      font-family: var(--font-display);
-      font-size: clamp(2.4rem, 7vw, 4.4rem);
-      line-height: 1.02;
-      letter-spacing: -0.03em;
-      margin: 0 0 1rem;
-      font-weight: 700;
-    }
-
-    .hero-brand span {
-      display: block;
-      color: var(--gold-soft);
     }
 
     .hero h1 {
@@ -477,10 +494,29 @@
     }
 
     .footer-brand {
-      font-family: var(--font-display);
-      color: var(--white);
-      font-size: 1.2rem;
-      margin: 0 0 0.35rem;
+      display: block;
+      width: min(11.5rem, 70vw);
+      margin: 0 0 1rem;
+      padding: 0.65rem 0.75rem;
+      background: #ececec;
+      line-height: 0;
+    }
+
+    .footer-brand img {
+      width: 100%;
+      height: auto;
+    }
+
+    .contact-logo {
+      display: block;
+      width: min(12rem, 55vw);
+      margin: 0 0 1.25rem;
+      line-height: 0;
+    }
+
+    .contact-logo img {
+      width: 100%;
+      height: auto;
     }
 
     .footer-disclaimer {
@@ -527,7 +563,7 @@
 
     @media (max-width: 419px) {
       .nav { gap: 0.65rem; }
-      .brand { font-size: 0.98rem; max-width: 11rem; line-height: 1.2; }
+      .brand img { height: 2.15rem; }
       .site-header .btn-primary {
         padding: 0.7rem 0.9rem;
         font-size: 0.85rem;
@@ -552,7 +588,9 @@
 <body>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Valley Notary Services home">Valley Notary Services</a>
+      <a class="brand" href="#top">
+        <img src="/images/logo.png" alt="Valley Notary Services" width="413" height="267" decoding="async" />
+      </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#area">Service Area</a>
@@ -564,18 +602,24 @@
 
   <main id="top">
     <section class="hero" aria-label="Hero">
-      <div class="hero-media" role="img" aria-label="Professional documents prepared for notarization"></div>
-      <div class="wrap hero-content">
-        <p class="hero-brand">Valley Notary <span>Services</span></p>
-        <h1>Mobile notary public for Modesto and the Central Valley</h1>
-        <p class="hero-lead">Reliable on-site notarizations for loan signings, real estate, and everyday documents—when and where you need them.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:info@valleynotaryservices.com?subject=Notary%20Appointment%20Request">Request a Notary</a>
-          <a class="btn btn-secondary" href="#services">View Services</a>
+      <div class="hero-masthead">
+        <div class="wrap">
+          <img src="/images/logo-light.png" alt="Valley Notary Services" width="413" height="267" decoding="async" fetchpriority="high" />
         </div>
-        <div class="hero-contact">
-          <a href="mailto:info@valleynotaryservices.com">info@valleynotaryservices.com</a>
-          <span>Stanislaus County · Mobile appointments</span>
+      </div>
+      <div class="hero-stage">
+        <div class="hero-media" role="img" aria-label="Professional documents prepared for notarization"></div>
+        <div class="wrap hero-content">
+          <h1>Mobile notary public for Modesto and the Central Valley</h1>
+          <p class="hero-lead">Reliable on-site notarizations for loan signings, real estate, and everyday documents—when and where you need them.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:info@valleynotaryservices.com?subject=Notary%20Appointment%20Request">Request a Notary</a>
+            <a class="btn btn-secondary" href="#services">View Services</a>
+          </div>
+          <div class="hero-contact">
+            <a href="mailto:info@valleynotaryservices.com">info@valleynotaryservices.com</a>
+            <span>Stanislaus County · Mobile appointments</span>
+          </div>
         </div>
       </div>
     </section>
@@ -662,6 +706,9 @@
     <section class="contact" id="contact">
       <div class="wrap contact-panel">
         <div class="contact-copy">
+          <div class="contact-logo">
+            <img src="/images/logo.png" alt="Valley Notary Services" width="413" height="267" loading="lazy" decoding="async" />
+          </div>
           <p class="section-kicker">Book an Appointment</p>
           <h2 class="section-title">Request a mobile notary visit</h2>
           <p>Email the details of your signing—document type, preferred time, and location—and we’ll confirm availability promptly.</p>
@@ -683,7 +730,9 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <p class="footer-brand">Valley Notary Services</p>
+        <div class="footer-brand">
+          <img src="/images/logo-light.png" alt="Valley Notary Services" width="413" height="267" loading="lazy" decoding="async" />
+        </div>
         <p class="footer-disclaimer">
           I am not an attorney licensed to practice law in California and may not give legal advice about immigration or any other legal matter or accept fees for legal advice. Notarial acts are performed in accordance with California law.
         </p>

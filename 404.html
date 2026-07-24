@@ -7,6 +7,8 @@
   <meta name="robots" content="noindex" />
   <link rel="canonical" href="https://valleynotaryservices.com/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -37,11 +39,16 @@
       text-align: center;
     }
     .brand {
-      font-family: var(--font-display);
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--gold-soft);
-      margin: 0 0 1.5rem;
+      display: block;
+      width: min(14rem, 70vw);
+      margin: 0 auto 1.75rem;
+      padding: 0.75rem 0.9rem;
+      background: #ececec;
+      line-height: 0;
+    }
+    .brand img {
+      width: 100%;
+      height: auto;
     }
     h1 {
       font-family: var(--font-display);
@@ -70,7 +77,9 @@
 </head>
 <body>
   <div class="panel">
-    <p class="brand">Valley Notary Services</p>
+    <a class="brand" href="/">
+      <img src="/images/logo-light.png" alt="Valley Notary Services" width="413" height="267" decoding="async" />
+    </a>
     <h1>Page not found</h1>
     <p>That link doesn’t exist. Head back to the homepage to request a mobile notary appointment in Modesto and the Central Valley.</p>
     <a class="btn" href="/">Back to homepage</a>

@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Valley Notary Services">
-  <rect width="64" height="64" rx="8" fill="#0f172a"/>
-  <path d="M14 18h36v4H14zm6 10h24v3H20zm-2 12h28v18H18zm6 5v8h16v-8z" fill="#d97706"/>
-  <circle cx="32" cy="24" r="3" fill="#fbbf24"/>
+  <rect width="64" height="64" rx="10" fill="#0f172a"/>
+  <circle cx="32" cy="32" r="20" fill="#1e3a5f"/>
+  <path d="M16 40 L24 26 L30 34 L36 22 L42 30 L48 24 L48 44 L16 44 Z" fill="#5b8db8"/>
+  <path d="M16 44 C22 40 28 42 32 38 C36 42 42 40 48 44 L48 48 L16 48 Z" fill="#0f172a"/>
+  <path d="M16 46 C24 43 28 45 32 41 C36 45 40 43 48 46" fill="none" stroke="#3d6d94" stroke-width="1.5"/>
 </svg>
