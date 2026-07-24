@@ -6,6 +6,8 @@ Professional mobile notary public site for Modesto, CA and the Central Valley. A
 
 `www.valleynotaryservices.com` redirects to the apex canonical URL. GitHub Pages serves the site over HTTPS (custom domain + enforced HTTPS).
 
+Domain audit and DNS checklist: [`docs/CUSTOM-DOMAIN.md`](docs/CUSTOM-DOMAIN.md)
+
 ## Stack
 
 - Static HTML/CSS (no build step)
