@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page not found | Valley Notary Services</title>
-  <meta name="description" content="That page was not found. Return to Valley Notary Services to request a mobile notary appointment in Modesto, CA." />
   <meta name="robots" content="noindex" />
-  <meta name="theme-color" content="#0f172a" />
   <link rel="canonical" href="https://valleynotaryservices.com/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32" />
@@ -18,7 +16,6 @@
     :root {
       --navy: #0f172a;
       --gold: #d97706;
-      --gold-soft: #fbbf24;
       --slate: #f8fafc;
       --font-display: "Fraunces", Georgia, serif;
       --font-body: "Manrope", "Segoe UI", sans-serif;
@@ -33,20 +30,10 @@
       justify-content: center;
       font-family: var(--font-body);
       color: var(--slate);
-      background:
-        radial-gradient(ellipse at 20% 10%, rgba(61, 109, 148, 0.35), transparent 45%),
-        radial-gradient(ellipse at 90% 80%, rgba(217, 119, 6, 0.18), transparent 40%),
-        linear-gradient(160deg, #0f172a 0%, #1e293b 55%, #0f172a 100%);
+      background: linear-gradient(160deg, #0f172a 0%, #1e293b 55%, #0f172a 100%);
       padding: 2rem 2rem 5.5rem;
     }
-    :focus-visible {
-      outline: 3px solid var(--gold);
-      outline-offset: 3px;
-    }
-    .panel {
-      width: min(100%, 36rem);
-      text-align: center;
-    }
+    .panel { width: min(100%, 36rem); text-align: center; }
     .brand {
       display: block;
       width: min(14rem, 70vw);
@@ -55,10 +42,7 @@
       background: #ececec;
       line-height: 0;
     }
-    .brand img {
-      width: 100%;
-      height: auto;
-    }
+    .brand img { width: 100%; height: auto; }
     h1 {
       font-family: var(--font-display);
       font-size: clamp(2rem, 6vw, 3rem);
@@ -86,40 +70,27 @@
       font-weight: 700;
       text-decoration: none;
       border-radius: 4px;
-      border: 2px solid transparent;
-      transition: background 160ms ease;
+      min-height: 44px;
     }
     a.btn:hover { background: #b45309; }
     a.btn-ghost {
       background: transparent;
-      border-color: rgba(248, 250, 252, 0.4);
-      color: var(--slate);
+      border: 2px solid rgba(255,255,255,0.45);
     }
-    a.btn-ghost:hover {
-      background: rgba(248, 250, 252, 0.08);
-      border-color: var(--slate);
-    }
+    a.btn-ghost:hover { background: rgba(255,255,255,0.1); }
     .site-footer {
       position: fixed;
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(15, 23, 42, 0.92);
+      background: var(--navy);
       color: rgba(248, 250, 252, 0.62);
       padding: 1rem 1.25rem;
       font-size: 0.85rem;
       line-height: 1.5;
       text-align: center;
-      border-top: 1px solid rgba(248, 250, 252, 0.1);
     }
-    .site-footer p {
-      margin: 0;
-      color: rgba(248, 250, 252, 0.62);
-    }
-    .site-footer a {
-      color: var(--gold-soft);
-      text-decoration: none;
-    }
+    .site-footer p { margin: 0; color: rgba(248, 250, 252, 0.62); }
   </style>
 </head>
 <body>
@@ -128,17 +99,14 @@
       <img src="/images/logo-light.png" alt="Valley Notary Services" width="413" height="267" decoding="async" />
     </a>
     <h1>Page not found</h1>
-    <p>That link doesn’t exist. Head back to the homepage to request a mobile notary appointment in Modesto and the Central Valley.</p>
+    <p>That link doesn’t exist. Head back to the homepage to request a mobile notary appointment, or call us directly.</p>
     <div class="actions">
       <a class="btn" href="/">Back to homepage</a>
-      <a class="btn btn-ghost" href="mailto:info@valleynotaryservices.com?subject=Notary%20Appointment%20Request">Email us</a>
+      <a class="btn btn-ghost" href="tel:+12093155702">(209) 315-5702</a>
     </div>
   </div>
   <footer class="site-footer">
-    <p>&copy; <span id="year">2026</span> Martinez Enterprises. All rights reserved. Valley Notary Services is a service of Martinez Enterprises. · <a href="mailto:info@valleynotaryservices.com">info@valleynotaryservices.com</a></p>
+    <p>&copy; 2026 Martinez Enterprises. All rights reserved. Valley Notary Services is a service of Martinez Enterprises.</p>
   </footer>
-  <script>
-    document.getElementById("year").textContent = String(new Date().getFullYear());
-  </script>
 </body>
 </html>
