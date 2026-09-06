@@ -1,6 +1,6 @@
 # Valley Notary Services
 
-Professional mobile notary public site for Modesto, CA and the Central Valley. A service of Martinez Enterprises.
+Mobile-only traveling notary public site for Modesto, CA and the Central Valley. We come to you — no walk-in office. A service of Martinez Enterprises.
 
 **Live site:** [https://valleynotaryservices.com](https://valleynotaryservices.com)
 
