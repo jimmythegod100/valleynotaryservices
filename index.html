@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- build: mobile-only-20260906a -->
+  <!-- build: jobs-ready-20260916b -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Valley Notary Services | Mobile Notary Only — We Come to You</title>
@@ -33,7 +33,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css?v=20260906a" />
+  <meta property="og:image:alt" content="Valley Notary Services — mobile notary for Modesto and the Central Valley" />
+  <link rel="stylesheet" href="/css/style.css?v=20260916b" />
 
   <script type="application/ld+json">
   {
@@ -47,6 +48,13 @@
     "email": "info@valleynotaryservices.com",
     "telephone": "+1-209-315-5702",
     "serviceType": "Mobile notary",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-209-315-5702",
+      "contactType": "customer service",
+      "areaServed": "US-CA",
+      "availableLanguage": "English"
+    },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Modesto",
@@ -60,6 +68,10 @@
       {"@type": "City", "name": "Salida"},
       {"@type": "City", "name": "Riverbank"},
       {"@type": "City", "name": "Oakdale"},
+      {"@type": "City", "name": "Hughson"},
+      {"@type": "City", "name": "Patterson"},
+      {"@type": "City", "name": "Escalon"},
+      {"@type": "City", "name": "Waterford"},
       {"@type": "AdministrativeArea", "name": "Stanislaus County"},
       {"@type": "AdministrativeArea", "name": "Central Valley, California"}
     ],
@@ -78,6 +90,46 @@
     "priceRange": "$$"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you have an office?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Valley Notary Services is mobile only. There is no walk-in location. We meet you at home, your workplace, a hospital, a coffee shop, or the closing table."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do you travel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Primarily Modesto, Ceres, Turlock, Salida, Riverbank, Oakdale, Hughson, Patterson, Escalon, Waterford, and the broader Stanislaus County / Central Valley area. Ask if your city is nearby — we confirm travel before booking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What ID do I need?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each signer must present valid, current photo identification that meets California notary requirements, such as a driver’s license, state ID, or passport. Bring original IDs — not photocopies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should documents be signed before the appointment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Leave signature lines blank until the notary is present. Pre-signed documents typically cannot be notarized."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -87,18 +139,21 @@
       <a class="brand" href="#top" aria-label="Valley Notary Services home">
         <img src="/images/logo.png" alt="Valley Notary Services" width="413" height="267" decoding="async" />
       </a>
-      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
-        <span></span><span></span><span></span>
-      </button>
       <nav class="nav-links" id="primary-nav" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#how-it-works">How it works</a>
         <a href="#fees">Fees</a>
         <a href="#area">Where we travel</a>
         <a href="#faq">FAQ</a>
-        <a href="#book">Book</a>
+        <a href="/request.html">Request</a>
       </nav>
-      <a class="btn btn-primary nav-cta-desktop tap-target" href="#book">Book mobile</a>
+      <div class="nav-actions">
+        <a class="btn btn-primary nav-cta-call tap-target" href="tel:+12093155702" data-phone-href>Call</a>
+        <a class="btn btn-dark nav-cta-desktop tap-target" href="/request.html">Request visit</a>
+        <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -112,8 +167,8 @@
           <h1 id="hero-heading">Traveling notary for Modesto and the Central Valley — we come to you</h1>
           <p class="hero-lead">There is no walk-in office. Loan signings, hospital and home visits, workplace I-9s, and escrow closings — at your location, on your schedule.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary tap-target" href="#book">Book a mobile appointment</a>
-            <a class="btn btn-secondary tap-target" href="tel:+12093155702">Call (209) 315-5702</a>
+            <a class="btn btn-primary tap-target" href="tel:+12093155702">Call (209) 315-5702</a>
+            <a class="btn btn-secondary tap-target" href="/request.html">Request a notary visit</a>
           </div>
           <div class="hero-contact">
             <a href="tel:+12093155702" data-phone-href data-phone-label>(209) 315-5702</a>
@@ -143,18 +198,22 @@
           <article class="service">
             <h3>Loan Signings &amp; Escrow Closings</h3>
             <p>Mortgage, refinance, HELOC, and escrow packages at your closing table, home, or wherever the file needs us.</p>
+            <a class="service-book" href="/request.html?type=loan">Request this visit</a>
           </article>
           <article class="service">
             <h3>Hospital &amp; Home Visits</h3>
             <p>Bedside and kitchen-table notarizations when travel is the only option that works — including estate documents for the family.</p>
+            <a class="service-book" href="/request.html?type=hospital">Request this visit</a>
           </article>
           <article class="service">
             <h3>Workplace &amp; I-9</h3>
             <p>We come to your job for employment eligibility (I-9) and other on-site documents. No trip to an office.</p>
+            <a class="service-book" href="/request.html?type=i9">Request this visit</a>
           </article>
           <article class="service">
             <h3>General Notary Work</h3>
             <p>Affidavits, powers of attorney, bills of sale, deeds, and other California notarial acts at a meeting spot you choose.</p>
+            <a class="service-book" href="/request.html?type=general">Request this visit</a>
           </article>
         </div>
       </div>
@@ -227,6 +286,10 @@
               <li>Salida</li>
               <li>Riverbank</li>
               <li>Oakdale</li>
+              <li>Hughson</li>
+              <li>Patterson</li>
+              <li>Escalon</li>
+              <li>Waterford</li>
               <li>Stanislaus County</li>
               <li>Central Valley</li>
             </ul>
@@ -267,7 +330,7 @@
           </details>
           <details class="faq-item">
             <summary>Where do you travel?</summary>
-            <p>Primarily Modesto, Ceres, Turlock, Salida, Riverbank, Oakdale, and the broader Stanislaus County / Central Valley area. Ask if your city is nearby — we’ll confirm travel before booking.</p>
+            <p>Primarily Modesto, Ceres, Turlock, Salida, Riverbank, Oakdale, Hughson, Patterson, Escalon, Waterford, and the broader Stanislaus County / Central Valley area. Ask if your city is nearby — we’ll confirm travel before booking.</p>
           </details>
           <details class="faq-item">
             <summary>What ID do I need?</summary>
@@ -306,19 +369,25 @@
         <div>
           <p class="section-kicker">Book a mobile appointment</p>
           <h2 class="section-title" id="book-heading">Tell us where to meet</h2>
-          <p class="section-lead" style="margin-bottom:1.25rem;">Share a few details and we’ll confirm availability promptly. Prefer to talk now? Call or text during our travel windows — we come to you.</p>
+          <p class="section-lead" style="margin-bottom:1.25rem;">Share a few details and we’ll confirm availability promptly. Prefer to talk now? Call or text <a href="tel:+12093155702">(209) 315-5702</a> — we come to you.</p>
 
           <form
             class="book-form"
             id="booking-form"
             action="https://formsubmit.co/info@valleynotaryservices.com"
             method="POST"
+            accept-charset="UTF-8"
           >
             <input type="hidden" name="_subject" value="Notary Appointment Request" />
             <input type="hidden" name="_next" value="https://valleynotaryservices.com/request-received.html" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
-            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <input type="hidden" name="_replyto" id="form-replyto" value="" />
+            <input type="hidden" name="_autoresponse" value="Thank you for requesting a mobile notary visit with Valley Notary Services. We received your request and will confirm a meeting location typically within one business day (sooner for urgent closings when available). For same-day needs, call or text (209) 315-5702." />
+            <div class="hp" aria-hidden="true">
+              <label for="company">Company</label>
+              <input type="text" name="_honey" id="company" tabindex="-1" autocomplete="off" />
+            </div>
 
             <div class="form-grid">
               <div class="form-row">
@@ -338,7 +407,23 @@
                 </div>
                 <div class="form-field">
                   <label for="city">City / meeting area</label>
-                  <input id="city" name="city" type="text" required placeholder="e.g. Modesto" />
+                  <input id="city" name="city" type="text" required placeholder="e.g. Modesto" autocomplete="address-level2" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="meeting_location">Meeting place</label>
+                  <input id="meeting_location" name="meeting_location" type="text" placeholder="Home, hospital, workplace, or coffee shop" autocomplete="street-address" />
+                </div>
+                <div class="form-field">
+                  <label for="signers">Number of signers</label>
+                  <select id="signers" name="signers">
+                    <option value="">Select…</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4+</option>
+                  </select>
                 </div>
               </div>
               <div class="form-row">
@@ -370,13 +455,13 @@
                 </select>
               </div>
               <div class="form-field">
-                <label for="notes">Location notes / escrow instructions</label>
-                <textarea id="notes" name="notes" placeholder="Address or meeting spot, number of signers, special instructions…"></textarea>
+                <label for="notes">Escrow instructions / extra notes</label>
+                <textarea id="notes" name="notes" placeholder="File number, number of pages, gate code, or other instructions…"></textarea>
               </div>
               <div class="form-actions">
                 <button type="submit" class="btn btn-primary tap-target">Send Appointment Request</button>
               </div>
-              <p class="form-note">You’ll receive a confirmation page after submit. We typically reply within one business day — sooner for urgent closings when available. We’ll confirm the meeting location; we come to you.</p>
+              <p class="form-note">You’ll land on a confirmation page after sending. If that page does not appear, call or text <a href="tel:+12093155702">(209) 315-5702</a> — we’ll take the request by phone. We typically reply within one business day, sooner for urgent closings when available.</p>
             </div>
           </form>
         </div>
@@ -425,10 +510,10 @@
   <div class="sticky-cta" role="region" aria-label="Quick contact">
     <a href="tel:+12093155702" class="tap-target" data-phone-href>Call</a>
     <a href="sms:+12093155702?body=Hi%20%E2%80%94%20I%27d%20like%20to%20book%20a%20mobile%20notary%20appointment." class="tap-target" data-sms-href>Text</a>
-    <a href="#book" class="tap-target" aria-label="Book a mobile appointment">Book a mobile appointment</a>
+    <a href="#book" class="tap-target">Request</a>
   </div>
 
-  <script src="/js/site-config.js?v=20260906a"></script>
-  <script src="/js/main.js?v=20260906a"></script>
+  <script src="/js/site-config.js?v=20260916b"></script>
+  <script src="/js/main.js?v=20260916b"></script>
 </body>
 </html>

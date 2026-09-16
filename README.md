@@ -16,7 +16,11 @@ Domain audit and DNS checklist: [`docs/CUSTOM-DOMAIN.md`](docs/CUSTOM-DOMAIN.md)
 
 ## Contact
 
-info@valleynotaryservices.com
+info@valleynotaryservices.com · (209) 315-5702
+
+Booking form posts to FormSubmit (`info@valleynotaryservices.com`) and redirects to `/request-received.html`. Shareable request URL: [valleynotaryservices.com/request.html](https://valleynotaryservices.com/request.html).
+
+**Owner action (once):** submit the live form and click FormSubmit’s first-email confirmation so later customer requests arrive in the inbox.
 
 ## Local preview
 

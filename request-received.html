@@ -13,15 +13,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css?v=20260906a" />
+  <link rel="stylesheet" href="/css/style.css?v=20260916b" />
   <style>
     .confirm-page {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       background: linear-gradient(160deg, #fff7ed 0%, #f8fafc 50%, #eef2ff 100%);
-      padding-bottom: 0;
+      padding-bottom: 4.5rem;
     }
+    .confirm-page .site-footer { padding-bottom: 1.25rem; margin-bottom: 0.25rem; }
     .confirm-main {
       flex: 1;
       display: grid;
@@ -48,13 +49,16 @@
       margin: 0 0 0.75rem;
       line-height: 1.15;
     }
-    .confirm-card p { color: #475569; margin: 0 0 1rem; }
+    .confirm-card p { color: #475569; margin: 0 0 1rem; overflow-wrap: break-word; }
     .confirm-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 0.75rem;
       justify-content: center;
       margin-top: 1.5rem;
+    }
+    @media (min-width: 980px) {
+      .confirm-page { padding-bottom: 0; }
     }
   </style>
 </head>
@@ -67,8 +71,9 @@
       <p>We’ve got your mobile appointment request. We’ll confirm where to meet — we come to you — typically within one business day, sooner for urgent closings when available.</p>
       <p><strong>Need us sooner?</strong> Call or text <a href="tel:+12093155702">(209) 315-5702</a>.</p>
       <div class="confirm-actions">
-        <a class="btn btn-primary tap-target" href="/">Back to homepage</a>
+        <a class="btn btn-primary tap-target" href="tel:+12093155702">Call (209) 315-5702</a>
         <a class="btn btn-dark tap-target" href="sms:+12093155702?body=Hi%20%E2%80%94%20following%20up%20on%20my%20notary%20request.">Text us</a>
+        <a class="btn btn-dark tap-target" href="/">Back to homepage</a>
       </div>
     </div>
   </main>
@@ -77,5 +82,10 @@
       <p class="footer-copy" style="margin:0;border:0;padding:0;">&copy; 2026 Martinez Enterprises. All rights reserved. Valley Notary Services is a service of Martinez Enterprises.</p>
     </div>
   </footer>
+  <div class="sticky-cta" role="region" aria-label="Quick contact">
+    <a href="tel:+12093155702" class="tap-target">Call</a>
+    <a href="sms:+12093155702?body=Hi%20%E2%80%94%20following%20up%20on%20my%20notary%20request." class="tap-target">Text</a>
+    <a href="/" class="tap-target">Home</a>
+  </div>
 </body>
 </html>
