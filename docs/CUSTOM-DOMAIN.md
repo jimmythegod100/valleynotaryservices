@@ -40,7 +40,7 @@ Valley Notary Services custom domain is **live and verified**.
 
 ### STILL NEEDED
 
-- [ ] **FormSubmit activation** — submit contact form once from production URL if not already done
+- [ ] **FormSubmit activation** — from production, submit the request form once and click the confirmation email FormSubmit sends to `info@valleynotaryservices.com`. Until that click, the first customer may see FormSubmit’s activation page instead of `/request-received.html`.
 - [ ] **Optional:** Cloudflare Email Routing rules for `info@valleynotaryservices.com` if inbox forwarding not yet tested
 
 ## Verify

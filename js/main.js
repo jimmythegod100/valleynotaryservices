@@ -42,7 +42,38 @@
 
   const form = document.getElementById('booking-form');
   if (form) {
+    if (cfg.formEndpoint) form.setAttribute('action', cfg.formEndpoint);
+    const subject = form.querySelector('input[name="_subject"]');
+    const next = form.querySelector('input[name="_next"]');
+    const auto = form.querySelector('input[name="_autoresponse"]');
+    if (subject && cfg.formSubject) subject.value = cfg.formSubject;
+    if (next && cfg.formNext) next.value = cfg.formNext;
+    if (auto && cfg.formAutoresponse) auto.value = cfg.formAutoresponse;
+
+    const email = form.querySelector('#email');
+    const replyto = form.querySelector('#form-replyto');
+    const syncReplyto = () => {
+      if (email && replyto) replyto.value = email.value.trim();
+    };
+    if (email) email.addEventListener('input', syncReplyto);
+
+    const typeField = form.querySelector('#document_type');
+    if (typeField) {
+      const params = new URLSearchParams(window.location.search);
+      const typeMap = {
+        loan: 'Loan / real estate closing',
+        hospital: 'Hospital / home visit',
+        i9: 'Workplace / I-9',
+        general: 'Affidavit / general notary',
+        estate: 'Estate planning (will, trust, directive)',
+        poa: 'Power of attorney'
+      };
+      const preset = typeMap[params.get('type') || ''];
+      if (preset) typeField.value = preset;
+    }
+
     form.addEventListener('submit', (e) => {
+      syncReplyto();
       if (!form.checkValidity()) {
         e.preventDefault();
         form.reportValidity();
@@ -52,6 +83,10 @@
       if (btn) {
         btn.disabled = true;
         btn.textContent = 'Sending…';
+        window.setTimeout(() => {
+          btn.disabled = false;
+          btn.textContent = 'Send Appointment Request';
+        }, 8000);
       }
     });
   }
