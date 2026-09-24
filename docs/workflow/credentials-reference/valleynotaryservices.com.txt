@@ -1,0 +1,40 @@
+;;
+;; Domain:     valleynotaryservices.com.
+;; Exported:   2026-07-24 01:20:04
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+valleynotaryservices.com	3600	IN	SOA	sue.ns.cloudflare.com. dns.cloudflare.com. 2053652260 10000 2400 604800 3600
+
+;; NS Records
+valleynotaryservices.com.	86400	IN	NS	sue.ns.cloudflare.com.
+valleynotaryservices.com.	86400	IN	NS	thaddeus.ns.cloudflare.com.
+
+;; A Records
+valleynotaryservices.com.	1	IN	A	185.199.111.153 ; GitHub Pages cf_tags=cf-proxied:false
+valleynotaryservices.com.	1	IN	A	185.199.110.153 ; GitHub Pages cf_tags=cf-proxied:false
+valleynotaryservices.com.	1	IN	A	185.199.109.153 ; GitHub Pages cf_tags=cf-proxied:false
+valleynotaryservices.com.	1	IN	A	185.199.108.153 ; cf_tags=cf-proxied:false
+
+;; CNAME Records
+www.valleynotaryservices.com.	1	IN	CNAME	jimmythegod100.github.io. ; GitHub Pages www cf_tags=cf-proxied:false
